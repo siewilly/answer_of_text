@@ -11,7 +11,8 @@ def print_triangle(triangle):
     for row in triangle:
         print(" ".join(map(str, row)))
 def main():
-    n = int(stdin.readline().strip())
+    n = int(stdin.readline().strip())+1
     triangle = gegnerate_pascals_triangle(n)
     print_triangle(triangle)
+
 main()
